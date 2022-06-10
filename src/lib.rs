@@ -21,8 +21,6 @@ fn search(haystack: &[i64], needle: i64) -> Option<usize> {
         let center = left + ((right - left) / 2);
         let current = haystack[center];
 
-        println!("{:?}", (left, right, center, current));
-
         if left == right {
             return None;
         }
